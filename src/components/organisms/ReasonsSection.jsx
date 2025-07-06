@@ -64,9 +64,27 @@ const ReasonsSection = () => {
     )
   }
 
-  return (
-    <section className="section-spacing">
-      <div className="max-w-6xl mx-auto px-4">
+return (
+    <section className="section-spacing bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 relative overflow-hidden">
+      {/* Romantic background decorations */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(18)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute animate-float-decoration"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${i * 0.4}s`,
+              fontSize: `${Math.random() * 16 + 12}px`,
+            }}
+          >
+            {i % 4 === 0 ? '💕' : i % 4 === 1 ? '✨' : i % 4 === 2 ? '🌸' : '💖'}
+          </div>
+        ))}
+      </div>
+      
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,22 +92,28 @@ const ReasonsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <Text variant="display" size="4xl" weight="bold" color="gradient" className="mb-4 glow-text">
+          <Text variant="cursive" size="4xl" weight="bold" color="gradient" className="mb-4 glow-text romantic-text-shadow">
             Why I Love You
           </Text>
-          <Text variant="body" size="lg" color="muted">
+          <Text variant="cursive" size="lg" color="muted" className="text-xl">
             Hover over each card to reveal a reason why you're amazing
           </Text>
-          <div className="w-24 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full mt-4" />
+          <div className="w-32 h-1 bg-gradient-to-r from-rose-400 via-pink-400 to-purple-400 mx-auto rounded-full mt-4 romantic-glow" />
         </motion.div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
-            <ReasonCard
+            <motion.div
               key={reason.Id}
-              reason={reason}
-              index={index}
-            />
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <ReasonCard
+                reason={reason}
+                index={index}
+              />
+            </motion.div>
           ))}
         </div>
       </div>

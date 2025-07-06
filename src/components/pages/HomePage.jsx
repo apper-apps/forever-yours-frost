@@ -14,8 +14,8 @@ const HomePage = () => {
     personalMessageRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  return (
-    <div className="min-h-screen">
+return (
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 relative overflow-hidden">
       <FloatingHearts />
       
       <HeroSection onScrollToNext={scrollToPersonalMessage} />

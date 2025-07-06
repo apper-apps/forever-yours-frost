@@ -9,10 +9,11 @@ const Card = React.forwardRef(({
   hover = true,
   ...props 
 }, ref) => {
-  const variants = {
+const variants = {
     default: 'bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg',
-    elevated: 'bg-white/90 backdrop-blur-sm border border-white/30 shadow-xl',
-    gradient: 'bg-gradient-to-br from-surface to-white/80 backdrop-blur-sm border border-white/20 shadow-lg',
+    elevated: 'bg-white/90 backdrop-blur-sm border border-white/30 shadow-xl romantic-glow',
+    gradient: 'bg-gradient-to-br from-rose-50/80 to-pink-50/80 backdrop-blur-sm border border-rose-200/30 shadow-lg',
+    romantic: 'bg-gradient-to-br from-rose-50 to-pink-50 backdrop-blur-sm border-2 border-rose-200 shadow-xl romantic-glow',
   }
 
   const CardComponent = hover ? motion.div : 'div'
@@ -24,10 +25,10 @@ const Card = React.forwardRef(({
   return (
     <CardComponent
       ref={ref}
-      className={cn(
+className={cn(
         'rounded-2xl p-6 transition-all duration-300',
         variants[variant],
-        hover && 'hover:shadow-2xl',
+        hover && 'hover:shadow-2xl hover:animate-gentle-sway',
         className
       )}
       {...motionProps}

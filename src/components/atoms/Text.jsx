@@ -10,10 +10,12 @@ const Text = React.forwardRef(({
   color = 'default',
   ...props 
 }, ref) => {
-  const variants = {
+const variants = {
     display: 'font-display',
     body: 'font-body',
     mono: 'font-mono',
+    cursive: 'font-cursive',
+    romantic: 'font-romantic',
   }
 
   const sizes = {
@@ -36,14 +38,15 @@ const Text = React.forwardRef(({
     bold: 'font-bold',
   }
 
-  const colors = {
+const colors = {
     default: 'text-gray-900',
     muted: 'text-gray-600',
     light: 'text-gray-500',
-    primary: 'text-primary',
-    accent: 'text-accent',
+    primary: 'text-rose-600',
+    accent: 'text-pink-600',
     white: 'text-white',
-    gradient: 'bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent',
+    gradient: 'bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 bg-clip-text text-transparent',
+    romantic: 'text-rose-800',
   }
 
   return (
