@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "text": "Your laugh is my favorite sound in the world. It lights up every room and makes my heart skip a beat.",
+    "category": "personality"
+  },
+  {
+    "Id": 2,
+    "text": "The way you make pancakes on Sunday mornings, dancing around the kitchen like nobody's watching.",
+    "category": "cute"
+  },
+  {
+    "Id": 3,
+    "text": "Your kindness to strangers shows me what a beautiful soul you have. You make the world brighter.",
+    "category": "character"
+  },
+  {
+    "Id": 4,
+    "text": "How you scrunch your nose when you're concentrating. It's the cutest thing I've ever seen.",
+    "category": "cute"
+  },
+  {
+    "Id": 5,
+    "text": "Your strength during tough times inspires me every day. You're my hero in so many ways.",
+    "category": "admiration"
+  },
+  {
+    "Id": 6,
+    "text": "The way you remember little details about everyone you meet. Your caring heart amazes me.",
+    "category": "character"
+  },
+  {
+    "Id": 7,
+    "text": "How you steal my hoodies and somehow make them look better on you than they ever did on me.",
+    "category": "cute"
+  },
+  {
+    "Id": 8,
+    "text": "Your dreams and ambitions. Watching you chase your goals makes me fall in love with you more each day.",
+    "category": "admiration"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "date": "2023-01-15",
+    "title": "Our First Date",
+    "description": "Coffee turned into a 5-hour conversation. I knew you were special from that very first laugh.",
+    "photoUrl": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop"
+  },
+  {
+    "Id": 2,
+    "date": "2023-02-14",
+    "title": "First Valentine's Day",
+    "description": "You made me a handmade card that I still keep in my wallet. It was perfect, just like you.",
+    "photoUrl": "https://images.unsplash.com/photo-1518049362265-d5b2a6467637?w=400&h=300&fit=crop"
+  },
+  {
+    "Id": 3,
+    "date": "2023-03-22",
+    "title": "Weekend Getaway",
+    "description": "Our first trip together to the coast. We watched the sunset and I realized I wanted to see every sunset with you.",
+    "photoUrl": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400&h=300&fit=crop"
+  },
+  {
+    "Id": 4,
+    "date": "2023-05-18",
+    "title": "Adventure Together",
+    "description": "We got lost on that hiking trail but found something better - complete trust in each other.",
+    "photoUrl": "https://images.unsplash.com/photo-1518049362265-d5b2a6467637?w=400&h=300&fit=crop"
+  },
+  {
+    "Id": 5,
+    "date": "2023-07-04",
+    "title": "Summer Festival",
+    "description": "Dancing with you under the fireworks, everything felt magical. That's when I knew I was falling hard.",
+    "photoUrl": "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=400&h=300&fit=crop"
+  },
+  {
+    "Id": 6,
+    "date": "2023-10-30",
+    "title": "First 'I Love You'",
+    "description": "Watching the sunrise together, the words just came naturally. Your smile in that moment is burned into my memory forever.",
+    "photoUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=300&fit=crop"
+  }
+]
